@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Better syntax highlighting in Reveal.js presentations</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+    <link rel="stylesheet" href="one-dark-syntax.css">
+    <style>
+      .reveal pre code {
+        line-height: 1.5;
+        border-radius: 5px;
+        max-height: 540px;
+      }
+      .reveal code {
+        font-family: Menlo, Consolas, mono-space;
+        font-size: 87%;
+        white-space: nowrap;
+      }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+        text-transform: none;
+      }
+      .reveal p {
+        font-size: 80%;
+      }
+      .reveal .progress {
+        color: #444;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-background="shire.jpeg">
+          <textarea data-template>
+# Don't use images for code in slides
+There's a better way
+
+```js
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name} well formatted code!
+      </div>
+    );
+  }
+}
+```
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+## You can copy the code!
+
+```py
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
+```
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+## You can highlight individual lines!
+
+```java;3
+public static int binarySearch(int arr[], int first, int last, int key) {
+   int mid = (first + last) / 2;
+   while(first < last){
+      if (arr[mid] < key){
+        first = mid + 1;
+      } else if (arr[mid] == key){
+        return arr[mid];
+      } else {
+         last = mid - 1;
+      }
+      mid = (first + last) / 2;
+   }
+}
+```
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+## And all of this is written in Markdown
+```md
+## And all of this is written in Markdown
+’’’js
+console.log("Hello world")!
+’’’
+- Beats
+  - Keynote
+  - PowerPoint
+```
+- Beats
+  - Keynote
+  - PowerPoint
+
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+## What's new?
+
+This is [reveal.js](https://github.com/hakimel/reveal.js) with highlighting using [Atom Highlights](https://github.com/atom/highlights).
+
+### Related
+
+[Gatsby Remark Highlights](https://github.com/amitpatra/gatsby-remark-highlights) - same thing but for Gatsby
+
+### Interested?
+
+Let me know at [@xixixao](https://twitter.com/xixixao)
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true, // I personally turn this off when presenting
+        hash: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          // { src: 'plugin/highlight/highlight.js' },
+          { src: 'atom-highlights.js' },
+          { src: 'reveal-atom-highlights.js' },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

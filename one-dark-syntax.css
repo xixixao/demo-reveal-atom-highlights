@@ -1,0 +1,461 @@
+.reveal pre code {
+  background-color: hsl(220, 13%, 18%);
+  color: hsl(220, 14%, 71%);
+}
+.reveal pre code .line.cursor-line {
+  background-color: hsla(220, 100%, 80%, 0.04);
+}
+.reveal pre code .invisible {
+  color: hsl(220, 14%, 71%);
+}
+.reveal pre code .cursor {
+  border-left: 2px solid hsl(220, 100%, 66%);
+}
+.reveal pre code .selection .region {
+  background-color: hsl(220, 13%, 28%);
+}
+.reveal pre code .bracket-matcher .region {
+  border-bottom: 1px solid hsl(220, 100%, 66%);
+  box-sizing: border-box;
+}
+.reveal pre code .invisible-character {
+  color: hsla(220, 14%, 71%, 0.15);
+}
+.reveal pre code .indent-guide {
+  color: hsla(220, 14%, 71%, 0.15);
+}
+.reveal pre code .wrap-guide {
+  background-color: hsla(220, 14%, 71%, 0.15);
+}
+.reveal pre code .find-result .region.region.region,
+.reveal pre code .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: hsla(220, 100%, 66%, 0.24);
+  transition: border-color 0.4s;
+}
+.reveal pre code .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+.reveal pre code .current-result .region.region.region {
+  border: 2px solid hsl(220, 100%, 66%);
+  transition-duration: 0.1s;
+}
+.reveal pre code .gutter .line-number {
+  color: hsl(220, 14%, 45%);
+  -webkit-font-smoothing: antialiased;
+}
+.reveal pre code .gutter .line-number.cursor-line {
+  color: hsl(220, 14%, 71%);
+  background-color: hsl(220, 13%, 26%);
+}
+.reveal pre code .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+.reveal pre code .gutter .line-number .icon-right {
+  color: hsl(220, 14%, 71%);
+}
+.reveal pre code .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+.reveal pre code .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted hsla(0, 70%, 60%, 0.5);
+  pointer-events: none;
+}
+.reveal pre code .gutter .line-number.folded,
+.reveal pre code .gutter .line-number:after,
+.reveal pre code .fold-marker:after {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--comment {
+  color: hsl(220, 10%, 40%);
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: hsl(220, 10%, 40%);
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--keyword {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--keyword.syntax--control {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--keyword.syntax--operator {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--storage {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--constant {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--constant.syntax--variable {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--constant.syntax--numeric {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--variable {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--variable.syntax--interpolation {
+  color: hsl(5, 48%, 51%);
+}
+.syntax--variable.syntax--parameter {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--string {
+  color: hsl(95, 38%, 62%);
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--string.syntax--regexp {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--string.syntax--other.syntax--link {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: hsl(220, 10%, 40%);
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: hsl(39, 67%, 69%);
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: hsl(286, 60%, 67%);
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: hsl(5, 48%, 51%);
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--support.syntax--class {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--support.syntax--type {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--support.syntax--function {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--meta.syntax--class {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--meta.syntax--link {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--meta.syntax--require {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--meta.syntax--selector {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--meta.syntax--separator {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--meta.syntax--tag {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--invalid.syntax--deprecated {
+  color: hsl(40, 60%, 20%) !important;
+  background-color: hsl(40, 60%, 70%) !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: hsl(0, 70%, 60%) !important;
+}
+.syntax--markup.syntax--bold {
+  color: hsl(29, 54%, 61%);
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--markup.syntax--deleted {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--markup.syntax--italic {
+  color: hsl(286, 60%, 67%);
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--markup.syntax--link {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--markup.syntax--inserted {
+  color: hsl(95, 38%, 62%);
+}
+.syntax--markup.syntax--quote {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--markup.syntax--raw {
+  color: hsl(95, 38%, 62%);
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: hsl(220, 9%, 55%);
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: hsl(29, 54%, 61%);
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: hsl(95, 38%, 62%);
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: hsl(5, 48%, 51%);
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: hsl(220, 9%, 55%);
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: hsl(95, 38%, 62%);
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--ng.syntax--interpolation {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: hsl(355, 65%, 65%);
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: hsl(207, 82%, 66%);
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: hsl(29, 54%, 61%);
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--ng.syntax--tag {
+  color: hsl(187, 47%, 55%);
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: hsl(39, 67%, 69%);
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: hsl(220, 14%, 71%);
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: hsl(286, 60%, 67%);
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: hsl(29, 54%, 61%);
+}
